@@ -22,3 +22,25 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Dossiers générés par IntelliJ
+.idea/
+
+# Fichiers de configuration spécifiques à IntelliJ
+*.iml
+*.iws
+out/
+target/
+
+# Fichiers de sauvegarde et de cache d'IntelliJ
+*.ipr
+*.iws
+*.ids
+*.idx
+*.bak
+*.DS_Store
+
+# Dossiers de compilation
+/classes/
+/bin/
+/out/
