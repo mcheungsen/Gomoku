@@ -67,8 +67,8 @@ public class Game {
      * droite haut : p.l - 1 ; p.c + 1
      * gauche bas : p.l + 1 ; p.c - 1
      *
-     * droite bas : p.l - 1 ; p.c - 1
-     * droite haut : p.l - 1 ; p.c + 1
+     * droite bas : p.l + 1 ; p.c + 1
+     * gauche haut : p.l - 1 ; p.c - 1
      *
      * @param p
      * @return
@@ -77,7 +77,7 @@ public class Game {
         int sumH = 1 + alignementSum(p, 0, 1) + alignementSum(p, 0, -1); // Horizontal
         int sumV = 1 + alignementSum(p, -1, 0) + alignementSum(p, 1,0); // vertical
         int sumDD = 1 + alignementSum(p, -1, 1) + alignementSum(p, 1,-1); // Diagonal Droite
-        int sumDG = 1 + alignementSum(p, -1, -1) + alignementSum(p, -1, +1); // Diagonal Gauche
+        int sumDG = 1 + alignementSum(p, -1, -1) + alignementSum(p, 1, +1); // Diagonal Gauche
         if(sumH >= 5 || sumV >= 5 || sumDD >= 5 || sumDG >= 5)
             return board.get(p);
         return Color.NONE;
