@@ -3,7 +3,6 @@ Ce projet Java est une implémentation du jeu Gomoku, également connu sous le n
 
 
 ## TODO
-- Scanner dans le main pour nommer les joueurs
 - RobotPlayer qui joue aléatoirement
 - Sauvegarde du jeu
 - IA RobotPlayer avec élagage alpha-bêta MinMax
